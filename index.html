@@ -58,6 +58,17 @@
         </fieldset>
         <fieldset>
             <legend>ความสนใจ</legend>
+            <label for="bookGenre">ประเภทของหนังสือที่สนใจ <span>*</span></label>
+            <select id="bookGenre" name="bookGenre" required>
+                <option value="">---กรุณาเลือก---</option>
+                <option value="fiction">นิยาย</option>
+                <option value="nonFiction">สารคดี</option>
+                <option value="history">ประวัติศาสตร์</option>
+                <option value="technology">เทคโนโลยี</option>
+                <option value="science">วิทยาศาสตร์</option>
+            </select>
+            <label for="newsletter">รับข่าวสารข้อมูลของห้องสมุดทางอีเมล</label>
+            <input type="checkbox" id="newsletter" name="newsletter">
         </fieldset>
         <button type="submit">สมัครสมาชิก</button>
     </form>
