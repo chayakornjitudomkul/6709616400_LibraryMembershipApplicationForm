@@ -15,6 +15,39 @@
         </header>
         <fieldset>
             <legend>ข้อมูลส่วนตัว</legend>
+            <div class="name-container">
+                <div>
+                    <label for="firstNameTH">ชื่อ (ภาษาไทย) <span>*</span></label>
+                    <input type="text" id="firstNameTH" name="firstNameTH" required>
+                </div>
+                <div>
+                    <label for="lastNameTH">นามสกุล (ภาษาไทย) <span>*</span></label>
+                    <input type="text" id="lastNameTH" name="lastNameTH" required>
+                </div>
+            </div>
+
+            <div class="name-container">
+                <div>
+                    <label for="firstNameEN">First Name (English) <span>*</span></label>
+                    <input type="text" id="firstNameEN" name="firstNameEN" required>
+                </div>
+                <div>
+                    <label for="lastNameEN">Last Name (English) <span>*</span></label>
+                    <input type="text" id="lastNameEN" name="lastNameEN" required>
+                </div>
+            </div>
+            <label>เพศ <span>*</span></label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">ชาย</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">หญิง</label>
+
+            <label for="studentId">รหัสนักศึกษา <span>*</span></label>
+            <input type="text" id="studentId" name="studentId" required pattern="\d{10}"
+                title="กรุณากรอกเลข 10 หลักของรหัสนักศึกษา">
+
+            <label for="faculty">คณะที่ศึกษา <span>*</span></label>
+            <input type="text" id="faculty" name="faculty" required>
         </fieldset>
         <fieldset>
             <legend>ข้อมูลติดต่อ</legend>
